@@ -1,5 +1,8 @@
 body {
     margin: 0px;
+    background-image: url("images/whirlpool\ galaxy.jpg");
+    background-position: center;
+    background-size: contain;
 }
 
 header {
@@ -75,4 +78,13 @@ article {
 
 #mainContent {
     width: 60%;
+}
+
+.folder {
+    width: 120vh;
+    height: 80vh;
+    background-color: #efe796;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 100px;
 }
