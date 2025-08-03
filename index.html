@@ -5,13 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rishit's Portfolio</title>
         <link rel="icon" href="images/autismguy.gif">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rpsstyle.css">
     </head>
-    
+
     <body>
-        <div id="big-picture">
-            <div class="folder" id="main"></div>
-            <div class="folder" id="top">
+        <h1>Hi There! ☺️</h1>
+        <h1>🚧 My main site is still under construction! 🚧</h1>
+        <a href="ucindex.html"><h2>If you want to see it, click me!</h2></a>
+        <h2 id="lastHeading">Otherwise, enjoy a game of Rock Paper Scissors!:</h2>
+
+        <div class="choices">
+            <button onclick="playGame('rock')">🪨</button>
+            <button onclick="playGame('paper')">📄</button>
+            <button onclick="playGame('scissors')">✂️</button>
         </div>
+
+        <div id="playerDisplay">Player:</div>
+        <div id="compDisplay">Computer:</div>
+        <div id="resultDisplay"></div>
+
+        <div class="scoreDisplay">Player Score: 
+            <span id="playerScoreDisplay">0</span>
+        </div>
+
+        <div class="scoreDisplay">Computer Score: 
+            <span id="compScoreDisplay">0</span>
+        </div>
+
+        <!--always keep script element last to avoid JS errors affecting website visuals-->
+        <script src="rpsindex.js"></script>
     </body>
 </html>
