@@ -1,3 +1,4 @@
+import './UC.css';
 
 function UnderConstruction() {
 

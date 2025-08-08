@@ -1,3 +1,4 @@
+import './Home.css';
 
 function Home() {
     const choices = ["rock", "paper", "scissors"];
@@ -54,7 +55,7 @@ function Home() {
         <>
             <h1>Hi There! ☺️</h1>
             <h1>🚧 My main site is still under construction! 🚧</h1>
-            <a href="ucindex.html"><h2>If you want to see it, click me!</h2></a>
+            <a href="/under-construction"><h2>If you want to see it, click me!</h2></a>
             <h2 id="lastHeading">Otherwise, enjoy a game of Rock Paper Scissors!:</h2>
 
             <div class="choices">
