@@ -52,7 +52,7 @@ function Home() {
     }   
 
     return(
-        <>
+        <div className="body">
             <h1>Hi There! ☺️</h1>
             <h1>🚧 My main site is still under construction! 🚧</h1>
             <a href="/under-construction"><h2>If you want to see it, click me!</h2></a>
@@ -68,14 +68,14 @@ function Home() {
             <div id="compDisplay">Computer:</div>
             <div id="resultDisplay"></div>
 
-            <div class="scoreDisplay">Player Score: 
+            <div className="scoreDisplay">Player Score: 
                 <span id="playerScoreDisplay">0</span>
             </div>
 
-            <div class="scoreDisplay">Computer Score: 
+            <div className="scoreDisplay">Computer Score: 
                 <span id="compScoreDisplay">0</span>
             </div>
-        </>
+        </div>
     );
 }
 
