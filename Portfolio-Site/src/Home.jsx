@@ -2,11 +2,11 @@ import './Home.css';
 
 function Home() {
     const choices = ["rock", "paper", "scissors"];
-    const playerDisplay = document.getElementById("playerDisplay");
-    const compDisplay = document.getElementById("compDisplay");
-    const resultDisplay = document.getElementById("resultDisplay");
-    const playerScoreDisplay = document.getElementById("playerScoreDisplay");
-    const compScoreDisplay = document.getElementById("compScoreDisplay");
+    const playerDisplay = document.getElementById("player-display");
+    const compDisplay = document.getElementById("comp-display");
+    const resultDisplay = document.getElementById("result-display");
+    const playerScoreDisplay = document.getElementById("player-score-display");
+    const compScoreDisplay = document.getElementById("comp-score-display");
     let playerScore = 0;
     let compScore = 0;
 
@@ -35,18 +35,18 @@ function Home() {
         compDisplay.textContent = `Computer: ${compChoice}`;
         resultDisplay.textContent = result;
 
-        resultDisplay.classList.remove("greenText", "redText");
+        resultDisplay.classList.remove("green-text", "red-text");
 
         switch(result) {
             case "You Win!":
-                resultDisplay.classList.add("greenText");
+                resultDisplay.classList.add("green-text");
                 playerScore++;
-                playerScoreDisplay.textContent = playerScore;
+                playerScoreDisplay.textContent = ` ${playerScore}`;
                 break;
             case "You Lose!":
-                resultDisplay.classList.add("redText");
+                resultDisplay.classList.add("red-text");
                 compScore++;
-                compScoreDisplay.textContent = compScore;
+                compScoreDisplay.textContent = ` ${compScore}`;
                 break;
         }
     }   
@@ -56,24 +56,24 @@ function Home() {
             <h1>Hi There! ☺️</h1>
             <h1>🚧 My main site is still under construction! 🚧</h1>
             <a href="/under-construction"><h2>If you want to see it, click me!</h2></a>
-            <h2 id="lastHeading">Otherwise, enjoy a game of Rock Paper Scissors!:</h2>
+            <h2 id="last-heading">Otherwise, enjoy a game of Rock Paper Scissors!:</h2>
 
-            <div class="choices">
-                <button onclick="playGame('rock')">🪨</button>
-                <button onclick="playGame('paper')">📄</button>
-                <button onclick="playGame('scissors')">✂️</button>
+            <div className="choices">
+                <button onClick={() => playGame('rock')}>🪨</button>
+                <button onClick={() => playGame('paper')}>📄</button>
+                <button onClick={() => playGame('scissors')}>✂️</button>
             </div>
 
-            <div id="playerDisplay">Player:</div>
-            <div id="compDisplay">Computer:</div>
-            <div id="resultDisplay"></div>
+            <div id="player-display">Player:</div>
+            <div id="comp-display">Computer:</div>
+            <div id="result-display"></div>
 
-            <div className="scoreDisplay">Player Score: 
-                <span id="playerScoreDisplay">0</span>
+            <div className="score-display">Player Score: 
+                <span id="player-score-display"> 0</span>
             </div>
 
-            <div className="scoreDisplay">Computer Score: 
-                <span id="compScoreDisplay">0</span>
+            <div className="score-display">Computer Score: 
+                <span id="comp-score-display"> 0</span>
             </div>
         </div>
     );

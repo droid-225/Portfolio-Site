@@ -1,9 +1,8 @@
-body {
+.uc-body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    background-image: url("images/whirlpool\ galaxy.jpg");
-    background-position: center;
+    background-image: url("./assets/images/galaxy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,10 +10,6 @@ body {
 
 .folder {
     padding: 0px;
-}
-
-#big-picture {
-    
 }
 
 #main {

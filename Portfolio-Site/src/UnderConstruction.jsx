@@ -3,9 +3,9 @@ import './UC.css';
 function UnderConstruction() {
 
     return(
-        <div id="big-picture">
-            <div class="folder" id="main"></div>
-            <div class="folder" id="top"></div>
+        <div className="uc-body">
+            <div className="folder" id="main"></div>
+            <div className="folder" id="top"></div>
         </div>
     );
 }
